@@ -6,10 +6,11 @@ namespace EmployeeWageProblem
     {
         static void Main(string[] args)
         {
-            EmpWage obj1 = new EmpWage();
-            obj1.Total("Cognizant", 20, 20, 100);
-            obj1.Total("HCL", 22, 25, 100);
-            obj1.Total("Cognizant", 20, 20, 100);
+            EmpWageBuilderArray obj = new EmpWageBuilderArray();
+            obj.addCompanyEmpWage("Reliance", 15, 8, 8);
+
+            obj.addCompanyEmpWage("Dmart", 10, 6, 20);
+            obj.ComputeEmpWage();
         }
     }
 }
